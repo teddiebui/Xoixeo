@@ -15,9 +15,12 @@ header .top-most {
     height: 80px;
     top: 56px;
 }
-
 header .top-nav .item {
     align-items: center;
+}
+
+header .top-nav .item >:nth-child(2) {
+    margin: 5%
 }
 
 header .cskh {
@@ -49,7 +52,6 @@ header .t-1 {
 }
 
 header .t-2 {
-    height: 80px;
     background-color: #1f2024;
 }
 
@@ -324,17 +326,19 @@ footer .copyright {
   }
 
 @media (min-width: 576px) {
-  #san-pham-da-dang .img-container {
-    margin-bottom: 22%;
-  }
+    #san-pham-da-dang .img-container {
+        margin-bottom: 22%;
+    }
 
-  #san-pham-da-dang .row .item button {
-    position: absolute;
-    top: 86%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-}
+    #san-pham-da-dang .row .item button {
+        position: absolute;
+        top: 86%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+
+
 
     .gradient-button {
         padding: 6px 15px;
@@ -370,3 +374,27 @@ footer .copyright {
     }
 
 }
+
+@media (min-width: 576px) { 
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }

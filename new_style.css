@@ -1,0 +1,561 @@
+body * {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-image: url("img/BG_MB_93Kb\ 1.png");
+    background-size: cover;
+}
+
+.container {
+    max-width: 1206px !important;
+}
+
+
+header #logo-container {
+    padding: 0 ;
+}
+
+header #logo-container {
+    width: 13%;
+}
+
+header #logo-text {
+    font-family: "Inter", sans-serif;
+}
+header .cskh-logo {
+    width: 75%;
+    display:block;
+
+    
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+}
+
+
+
+header #top-most .logo-text {
+    color: white;
+    font-size: 0.8rem;
+    
+}
+
+#top-controller {
+    margin-top: 0.5rem;
+}
+header #top-controller button {
+    width: 7rem;
+    height: auto;
+    padding: 0.3rem;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+header #top-controller div:first-child button {
+    background-color: #FEAD00;
+    border: 1px solid #FFFF65;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    
+}
+
+header #top-controller div:last-child button {
+    background-color: #383838;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    color: #c1c1c1;
+}
+
+#head-nav-left {
+    flex-direction: column;
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+}
+
+
+.button {
+    background-color: #FEAD00;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    display: block;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+header nav a img {
+    width: 25%;
+}
+
+header nav a span {
+    font-size: 8px;
+    text-wrap: nowrap;
+    font-weight: 600;
+}
+
+header nav .row:first-of-type{
+    background-color: #1F2124;
+}
+
+#banner .img-container {
+    position: relative;
+    overflow-x: hidden !important;
+}
+#banner img {
+    width: 200%;
+    position: relative;
+    transform: translate(-25%, 0);
+    
+}
+
+
+
+main {
+    color: white;
+}
+
+main > div, main > div > div {
+    margin-top: 2rem;
+}
+main .header-1 {
+    font-size: 18px;
+    color: #FEAD00;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+
+
+#tinh-nang-noi-bat .title {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+#tinh-nang-noi-bat .caption {
+    color: #DEDEDE;
+    font-size: 8px;
+    font-weight: normal;
+}
+#middle {
+    position: relative
+}
+#middle #zvvvs {
+    position: relative;
+    margin: auto;
+}
+
+.position-relative {
+    position: relative
+}
+
+.display {
+    display: block;
+}
+
+#middle img#t5th {
+    transform: translate(-3%, 0%);
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#middle button {
+    position: absolute;
+    width: 9rem;
+    height: 2.07rem;
+    z-index: 999;
+    background-image: url(img/bao-ve/CƯỢC\ NGAY_Nút\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    transform: translate(-26%, -16%);
+
+}
+
+#middle > div:first-child {
+    margin-top: 0;
+} 
+
+
+#middle #cup-c1 img {
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#middle > div {
+    margin-top: 1rem;
+}
+#san-pham-da-dang .item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#san-pham-da-dang .item img {
+    display: block;
+    margin: auto;
+}
+
+#san-pham-da-dang .row .button {
+    width: 9.65rem;
+    height: 2.105rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-image: url(img/bao-ve/CHƠI\ NGAY_Nút\ 2.png);
+    background-size: contain;
+}
+
+
+#thut .row > div {
+    width: auto;
+    position: relative;
+}
+#thut .row .button{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    transform: translate(82%, -146%);
+
+    background-image: url(img/bao-ve/Tham\ Gia\ Ngay\ 2.png);
+    background-size: contain;
+}
+
+#thut #ggt img {
+    display: block;
+    width: 100%;
+}
+
+#disappear-sm {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+#thut button#sgasd {
+    width: 29vw;
+    height: 5.6vw;
+    position: absolute;
+    transform: translate(11%, -140%);
+    background-image: url(img/bao-ve/Tham\ Gia\ Ngay\ 2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#gerwb {
+    display: none;
+}
+
+footer > .container > .row > div {
+    margin-top: 1rem;
+}
+
+#footer-logo .header-1 {
+    color: #FC8F00;
+    font-weight: bold;
+    font-size: 23px;
+
+}
+
+#kb .title {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+#kb #gp {
+    flex-wrap: wrap;
+}
+
+#kb .row > div {
+    margin-top: 1.5rem;
+}
+
+#pttt a img {
+    height: 45px;
+}
+
+#td img, #tn img, #gp img {
+    margin-right: 1.3rem;
+    
+}
+
+
+#gp a img {
+    height: 25px;
+    margin-top: 0.5rem;
+}
+#gp div:last-child {
+    margin-top: 0.5rem;
+}
+
+#bv a img, #td a img, #tn a img {
+    height: 33px;
+}
+
+
+
+#intro-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#footer-intro, #pttt .title, #copyright {
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+nav .hover:hover img:first-child {
+    display: none;
+}
+nav .hover:hover span {
+    color:#FC8F00
+}
+
+nav .hover:hover img:last-child {
+    display: inline;
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    
+
+    header nav .row:first-of-type{
+        background-color: inherit;
+    }
+
+    header nav {
+        background-color: #1F2124;
+    }
+    header nav a {
+        justify-content: center !important;
+    }
+    header nav a span {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    header nav a img {
+        width: 25px;
+    }
+
+    header .button {
+        font-size: 13px;
+        width: 125px;
+    }
+
+    main .header-1 {
+        font-size: 40px;
+        color: #FEAD00;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+
+    #banner img{
+        background-size: 100%
+    }
+    .display-sm {
+        display: block;
+    }
+
+    .display-sm-none {
+        display: none;
+    }
+    #sdsd {
+        display: none;
+    }
+
+    
+
+    #gerwb {
+        display: block;
+    }
+
+    #tinh-nang-noi-bat > div {
+        border-right: 1px solid #FEAD00;
+    }
+
+    #intro-title {
+        display: none
+    }
+
+    #san-pham-da-dang .row .button {
+        width: 11.5rem;
+        height: 2.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-image: url(img/bao-ve/CHƠI\ NGAY_Nút\ 2.png);
+        background-size: contain;
+    }
+    
+    #middle {
+        position: static;
+    }
+
+    #middle .button{
+        width: 10.2rem;
+        height: 2.37rem;
+        bottom: -3%;
+        left: 35%;
+        transform: none;
+    }
+    
+
+    
+
+    #footer-intro, #pttt .title, #copyright {
+        color: #FFFFFF;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #copyright {
+        padding: 20px;
+    }
+
+    #divider {
+        padding: 25px 0;
+        border-bottom: 1px solid #757575;
+        margin: auto;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #footer-logo .header-1 {
+        font-size: 31px;
+        font-weight: 500;
+    }
+
+    #intro {
+        font-size: 14px;
+    }
+
+    header #top-most .logo-text {
+        color: white;
+        font-size: 14px;
+    }
+
+    header .cskh-logo {
+        width: 100%;
+        height: 20px;
+        display: block;
+        margin-right: 10px;
+        /* padding-left: 1rem; */
+    }
+
+    #head-nav-left {
+        flex-direction: row;
+    }
+
+    #banner img {
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    body {
+        background-image: url("img/main-background.png");
+    }
+
+
+
+    #head-logo-container {
+        position: absolute;
+        top: 100%;
+    }
+    nav {
+        padding: 5px 0;
+    }
+    nav .row > :first-child {
+        margin-left: 20%;
+    }
+    nav .row > * {
+        padding-right: 3rem;
+    }
+
+    main > div, main > div > div {
+        margin-top: 4rem;
+    }
+
+    main .header-1 {
+        margin-bottom: 1.5rem;
+    }
+
+    #tinh-nang-noi-bat .article .row {
+        height: 100%;
+    }
+
+    #tinh-nang-noi-bat .caption {
+        font-size: 12px;
+    }
+
+    #tinh-nang-noi-bat .title {
+        font-size: 14px;
+    }
+
+    #tinh-nang-noi-bat .img-container {
+        margin: auto;
+        padding: 15px;
+    }
+
+    #tinh-nang-noi-bat .img-container img {
+        width: 100%;
+        display: block;
+    }
+
+    #thut .row .button {
+        width: 12.8rem;
+        height: 2.5rem;
+        position: absolute;
+        transform: none;
+        bottom: 0.7rem;
+        left: 36%;
+    }
+
+    #pttt a img {
+        height: 35px;
+        margin-right: 1.3rem;
+    }
+
+    #td img, #tn img, #gp img {
+        margin-right: 1rem;
+    }
+    
+    #bv a img, #td a img, #tn a img {
+        height: 33px;
+    }
+
+    #gp a img {
+        height: 22px;
+        margin-top: 0.1rem;
+        margin-right: 0.3rem;
+    }
+
+
+
+    
+
+}
