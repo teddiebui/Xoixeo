@@ -355,6 +355,14 @@ nav .hover.hovered img:last-child {
     background-image: url("img/hover/CUOC_NGAY.png");
 }
 
+#login:hover {
+    border-color: #FEAD00;
+    background-color: #FFDD65;
+}
+
+#register:hover {
+    background-color: #7B7979;
+}
 #san-pham-da-dang .row .button.hovered {
     background-image: url("img/hover/CHOI_NGAY.png");
 
