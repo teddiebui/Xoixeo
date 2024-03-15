@@ -69,6 +69,16 @@ header #top-controller div:last-child button {
     color: #c1c1c1;
 }
 
+header #top-controller button#login:hover {
+    border-color: #FEAD00;
+    background-color: #FFDD65;
+}
+
+header #top-controller button#register:hover {
+    background-color: #7B7979;
+}
+
+
 #head-nav-left {
     flex-direction: column;
 }
@@ -77,6 +87,11 @@ header #top-controller div:last-child button {
     width: 100%;
     height: auto;
 }
+
+.header-1 {
+    text-shadow: 0px 0px 5px #000;
+}
+
 
 
 .button {
@@ -154,6 +169,9 @@ main .header-1 {
     margin: auto;
 }
 
+#zvvvs > button:hover {
+    background-image: url("img/hover/CUOC_NGAY.png");
+}
 .position-relative {
     position: relative
 }
@@ -173,7 +191,7 @@ main .header-1 {
     width: 9rem;
     height: 2.07rem;
     z-index: 999;
-    background-image: url(img/bao-ve/CƯỢC\ NGAY_Nút\ 1.png);
+    background-image: url("img/CUOC_NGAY.png");
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 0;
@@ -207,16 +225,20 @@ main .header-1 {
 }
 
 #san-pham-da-dang .row .button {
-    width: 9.65rem;
+    width: 9.35rem;
     height: 2.105rem;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-image: url(img/bao-ve/CHƠI\ NGAY_Nút\ 2.png);
+    background-image: url("img/CHOI_NGAY.png");
     background-size: contain;
 }
 
+#san-pham-da-dang .row .button:hover {
+    background-image: url("img/hover/CHOI_NGAY.png");
+
+}
 
 #thut .row > div {
     width: auto;
@@ -228,9 +250,14 @@ main .header-1 {
     position: absolute;
     transform: translate(82%, -146%);
 
-    background-image: url(img/bao-ve/Tham\ Gia\ Ngay\ 2.png);
+    background-image: url("img/THAM_GIA_NGAY.png");
     background-size: contain;
 }
+
+#thut .row .button:hover {
+    background-image: url("img/hover/THAM_GIA_NGAY.png");
+}
+
 
 #thut #ggt img {
     display: block;
@@ -250,11 +277,15 @@ main .header-1 {
     height: 5.6vw;
     position: absolute;
     transform: translate(11%, -140%);
-    background-image: url(img/bao-ve/Tham\ Gia\ Ngay\ 2.png);
+    background-image: url("img/THAM_GIA_NGAY.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
+#thut button#sgasd:hover {
+    background-image: url("img/hover/THAM_GIA_NGAY.png");
+
+}
 
 #gerwb {
     display: none;
@@ -399,14 +430,12 @@ nav .hover:hover img:last-child {
     }
 
     #san-pham-da-dang .row .button {
-        width: 11.5rem;
+        width: 11rem;
         height: 2.5rem;
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
-        background-image: url(img/bao-ve/CHƠI\ NGAY_Nút\ 2.png);
-        background-size: contain;
     }
     
     #middle {
@@ -446,7 +475,7 @@ nav .hover:hover img:last-child {
 @media (min-width: 768px) {
     #footer-logo .header-1 {
         font-size: 31px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     #intro {
@@ -467,7 +496,9 @@ nav .hover:hover img:last-child {
     }
 
     #head-nav-left {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between !important;
     }
 
     #banner img {
@@ -504,6 +535,7 @@ nav .hover:hover img:last-child {
         margin-bottom: 1.5rem;
     }
 
+    
     #tinh-nang-noi-bat .article .row {
         height: 100%;
     }
@@ -527,7 +559,7 @@ nav .hover:hover img:last-child {
     }
 
     #thut .row .button {
-        width: 12.8rem;
+        width: 12.5rem;
         height: 2.5rem;
         position: absolute;
         transform: none;
