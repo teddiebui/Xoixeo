@@ -54,6 +54,7 @@ header #top-controller button {
     font-size: 13px;
 }
 
+
 header #top-controller div:first-child button {
     background-color: #FEAD00;
     border: 1px solid #FFFF65;
@@ -67,15 +68,6 @@ header #top-controller div:last-child button {
     border: 1px solid #FFF;
     border-radius: 1rem;
     color: #c1c1c1;
-}
-
-header #top-controller button#login:hover {
-    border-color: #FEAD00;
-    background-color: #FFDD65;
-}
-
-header #top-controller button#register:hover {
-    background-color: #7B7979;
 }
 
 
@@ -169,9 +161,6 @@ main .header-1 {
     margin: auto;
 }
 
-#zvvvs > button:hover {
-    background-image: url("img/hover/CUOC_NGAY.png");
-}
 .position-relative {
     position: relative
 }
@@ -235,10 +224,7 @@ main .header-1 {
     background-size: contain;
 }
 
-#san-pham-da-dang .row .button:hover {
-    background-image: url("img/hover/CHOI_NGAY.png");
 
-}
 
 #thut .row > div {
     width: auto;
@@ -254,9 +240,6 @@ main .header-1 {
     background-size: contain;
 }
 
-#thut .row .button:hover {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
-}
 
 
 #thut #ggt img {
@@ -282,10 +265,6 @@ main .header-1 {
     background-repeat: no-repeat;
 }
 
-#thut button#sgasd:hover {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
-
-}
 
 #gerwb {
     display: none;
@@ -351,17 +330,40 @@ footer > .container > .row > div {
     text-align: justify;
 }
 
-nav .hover:hover img:first-child {
+nav .hover.hovered img:first-child {
     display: none;
 }
-nav .hover:hover span {
+nav .hover.hovered span {
     color:#FC8F00
 }
 
-nav .hover:hover img:last-child {
+nav .hover.hovered img:last-child {
     display: inline;
     
 }
+
+#thut button#sgasd.hovered {
+    background-image: url("img/hover/THAM_GIA_NGAY.png");
+
+}
+
+#thut .row .button.hovered {
+    background-image: url("img/hover/THAM_GIA_NGAY.png");
+}
+
+#middle  button.hovered {
+    background-image: url("img/hover/CUOC_NGAY.png");
+}
+
+#san-pham-da-dang .row .button.hovered {
+    background-image: url("img/hover/CHOI_NGAY.png");
+
+}
+
+#ggt img:first-child {
+    width: 100%;
+}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -586,7 +588,17 @@ nav .hover:hover img:last-child {
         margin-right: 0.3rem;
     }
 
+    .display-md {
+        display: block;
+    }
 
+    .display-md-none {
+        display: none;
+    }
+
+    #head-nav-left {
+        align-items: center !important;
+    }
 
     
 
