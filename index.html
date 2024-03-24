@@ -16,7 +16,7 @@
 
 <body>
 
-    <header>
+    <header class="pc display-none display-md">
         <section id="top-most">
             <div class="container position-relative">
                 <div class="row justify-content-between">
@@ -26,8 +26,7 @@
                         </a>
                     </div>
 
-                    <div class="col-auto col-md-12 d-flex justify-content-center align-items-start"
-                        id="head-nav-left">
+                    <div class="col-auto col-md-12 d-flex justify-content-center align-items-start" id="head-nav-left">
                         <div class="d-flex justify-content-between">
                             <div id="logo-container" class=" img-container">
                                 <img class="cskh-logo img-fluid" src="img/cskh.png" alt="">
@@ -35,8 +34,8 @@
                             <div class="logo-text">Chăm sóc khách hàng</div>
                         </div>
                         <div class="d-flex justify-content-between pb-2" id="top-controller">
-                            <div class=""><button class="button" id="login">Đăng nhập</button></div>
-                            <div class=""><button class="col button" id="register">Đăng ký</button></div>
+                            <div class=""><button class="button controller active" id="login">Đăng nhập</button></div>
+                            <div class=""><button class="button controller" id="register">Đăng ký</button></div>
                         </div>
                     </div>
 
@@ -100,74 +99,149 @@
         </section>
     </header>
 
+    <header class="mobile display-md-none">
+        <div class="logo-container">
+            <div class="img-container">
+                <img class="img-fluid" src="img/logo1.png" alt="">
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <div class="container g-0">
+                <div class="row justify-content-center align-items-center text-center g-0">
+                    <div class="col">
+                        <a href="index.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-trangchu.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-trangchu.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">TRANG CHỦ</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="san-pham.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-sanpham.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-sanpham.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">SẢN PHẨM</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="thuong-hieu.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-thuonghieu.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-thuonghieu.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">THƯƠNG HIỆU</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="khuyen-mai.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-khuyenmai.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-khuyenmai.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">KHUYẾN MÃI</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="giai-tri.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-giaitri.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-giaitri.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">GIẢI TRÍ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner">
+            <div class="img-container">
+                <img class="" src="img/head-banner.png" alt="">
+            </div>
+        </section>
+
+        <section class="controller">
+            <div class="container">
+                <div class="d-flex justify-content-evenly pb-2" id="top-controller">
+                    <div class=""><button class="button controller active" id="login">Đăng nhập</button></div>
+                    <div class=""><button class="button controller" id="register">Đăng ký</button></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
     <main>
         <div class="container">
 
             <!-- TINH NANG NOI BAT -->
-            <div id="tinh-nang-noi-bat" class="row">
+            <div id="tinh-nang-noi-bat" class="row g-0">
                 <h1 class="header-1 text-center">TÍNH NĂNG NỔI BẬT</h1>
 
-                <div class="article col-6 col-md-3">
-                    <div class="row">
-                        <div class="col-4 img-container">
-                            <img class="img-fluid" src="img/image 160.png" alt="">
+                <div class="article col-6 col-md-3 d-flex">
+                    <div class="img-container">
+                        <img class="img-fluid" src="img/image 160.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="d-flex flex-column">
+                            <div class="title">Thương Hiệu Uy Tín</div>
+                            <div class="caption">Thương hiệu uy tín được nhiều người lựa chọn</div>
                         </div>
-                        <div class="col">
-                            <div class="row row-cols-1">
-                                <div class="title">Thương Hiệu Uy Tín</div>
-                                <div class="caption">Thương hiệu uy tín được nhiều người lựa chọn</div>
-                            </div>
 
-                        </div>
                     </div>
                 </div>
 
-                <div class="article col-6 col-md-3">
-                    <div class="row">
-                        <div class="col-4 img-container">
-                            <img class="img-fluid" src="img/image 159.png" alt="">
+                <div class="article col-6 col-md-3 d-flex">
+                    <div class="img-container">
+                        <img class="img-fluid" src="img/image 159.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="d-flex flex-column">
+                            <div class="title">Đa Dạng Sản Phẩm</div>
+                            <div class="caption">Casino trực tuyến, thể thao, nổ hũ, bắn cá, đá gà... Nhiều sản phẩm đa
+                                dạng bạn có thể lựa chọn.</div>
                         </div>
-                        <div class="col">
-                            <div class="row row-cols-1">
-                                <div class="title">Đa Dạng Sản Phẩm</div>
-                                <div class="caption">Casino trực tuyến, thể thao, nổ hũ, bắn cá, đá gà... Nhiều sản phẩm đa
-                                    dạng bạn có thể lựa chọn.</div>
-                            </div>
 
-                        </div>
                     </div>
                 </div>
 
-                <div class="article col-6 col-md-3">
-                    <div class="row">
-                        <div class="col-4 img-container">
-                            <img class="img-fluid" src="img/image 156.png" alt="">
-                        </div>
-                        <div class="col">
-                            <div class="row row-cols-1">
-                                <div class="title">An Ninh Bảo Mật </div>
-                                <div class="caption">Phương thức thanh toán đa dạng, đảm bảo an toàn và bảo mật cao.</div>
+                <div class="article col-6 col-md-3 d-flex">
+                    <div class="img-container">
+                        <img class="img-fluid" src="img/image 156.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="d-flex flex-column">
+                            <div class="title">An Ninh Bảo Mật </div>
+                            <div class="caption">Phương thức thanh toán đa dạng, đảm bảo an toàn và bảo mật cao.
                             </div>
 
                         </div>
+
                     </div>
                 </div>
 
-                <div class="article col-6 col-md-3">
-                    <div class="row">
-                        <div class="col-4 img-container">
-                            <img class="img-fluid" src="img/image 158.png" alt="">
+                <div class="article col-6 col-md-3 d-flex">
+                    <div class="img-container">
+                        <img class="img-fluid" src="img/image 158.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="d-flex flex-column">
+                            <div class="title">Giao Dịch Nhanh Chóng</div>
+                            <div class="caption">Giao dịch gửi tiền được xử lý trong vòng 1-3 phutsk hi nhận được
+                                khoản
+                                chuyển. Thời gian rút tiền trong vòng 5-15 phút.</div>
                         </div>
-                        <div class="col">
-                            <div class="row row-cols-1">
-                                <div class="title">Giao Dịch Nhanh Chóng</div>
-                                <div class="caption">Giao dịch gửi tiền được xử lý trong vòng 1-3 phutsk hi nhận được khoản
-                                    chuyển. Thời gian rút tiền trong vòng 5-15 phút.</div>
-                            </div>
 
-                        </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- TINH NANG NOI BAT 2 -->
@@ -217,24 +291,16 @@
             <!-- THUONG HIEU UY TIN -->
             <div class="" id="thut">
                 <h1 class="header-1 text-center">THƯƠNG HIỆU UY TÍN</h1>
-                <div class="row text-center">
-                    <img class="img-fluid display-md-none" src="img/Đại Sứ Thương Hiệu 1.png" alt="">
-                    <img class="img-fluid display-none display-md" src="img/thut.png" alt="">
-                    <div class="col display-md-none">
-                        <button class="button hover" id="sgasd"></button>
-                    </div>
-
-                    <div class="col display-none display-md">
-                        <button class="button hover"></button>
-                    </div>
-                    <div class="col display-none display-md">
-                        <button class="button hover"></button>
-                    </div>
-                    <div class="col display-none display-md">
-                        <button class="button hover"></button>
+                <div class="text-center">
+                    <div class="img-container">
+                        <img class="ga" src="img/Đại Sứ Thương Hiệu 1.png" alt="">
+                        <img class="abs display-none display-md" src="img/Luis E-Signature_Trắng 1.png" alt="">
+                        <img class="abs zz" src="img/PlayCircle.png" alt="">
+                        <div class="col">
+                            <button class="button hover" id="sgasd"></button>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- GOC GIAI TRI -->
@@ -278,18 +344,20 @@
                     <a class="col-5" href="index.html" style="display:block;">
                         <img src="img/logo1.png" class="img-fluid" alt="">
                     </a>
-                    <div class="col-7 header-1 p-3">
-                        KÊNH GIẢI TRÍ <br>BÓNG ĐÁ ONLINE
+                    <div class="col-7 p-3">
+                        <span class="header-1 text-gradient-inline">KÊNH GIẢI TRÍ</span> 
+                        <span class="header-1 text-gradient-inline">BÓNG ĐÁ ONLINE</span>
                     </div>
                 </div>
 
                 <!-- gioi thieu nen tang -->
-                <div class="col-12 col-lg-6" id="footer-intro">
-                    <div class="text-center p-3 w-75 m-auto" id="intro-title">XOIXEO - NỀN TẢNG XEM BÓNG ĐÁ TRỰC TUYẾN
+                <div class="col-12 col-lg-6 display-none display-md" id="footer-intro">
+                    <div class="text-center p-3 m-auto" id="intro-title">XOIXEO - NỀN TẢNG XEM BÓNG ĐÁ TRỰC TUYẾN
                         CHẤT LƯỢNG CAO</div>
-                    <div id="intro">NEW88 là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of Man và Khu
+                    <div id="intro">Xoixeo là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of Man và Khu
                         kinh tế Cagayan
-                        and Freeport cấp. Với bề dày kinh nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, NEW88 đã
+                        and Freeport cấp. Với bề dày kinh nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, Xoixeo
+                        đã
                         và
                         đang khẳng định vị thế của mình trên thị trường game trực tuyến .Với tư cách là một công ty trò
                         chơi
@@ -298,6 +366,7 @@
                         chuyên nghiệp đông đảo cung cấp sản phẩm ... <a href="#"
                             style="color: #FC8F00; text-decoration: none;">Xem thêm</a></div>
                 </div>
+
                 <!-- phuong thuc thanh toan -->
                 <div id="pttt" class="col-12 col-lg-auto">
                     <div class="title py-2">Phương Thức Thanh Toán</div>
@@ -335,39 +404,39 @@
                     <div class="row">
                         <div class="col-6 col-md-3" id="gp">
                             <div class="title">Giấy Phép</div>
-                            <div class="d-flex flex-wrap">
-                                <a href="#"><img src="img/giay-phep/1.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/2.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/3.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/4.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/5.png" alt=""></a>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <a href="#"><img src="img/giay-phep/Vector.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-1.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-2.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-3.svg" alt=""></a>
                             </div>
                         </div>
 
 
                         <div class="col-6 col-md-3" id="bv">
                             <div class="title">Bảo Vệ</div>
-                            <div class="d-flex flex-wrap">
-                                <a href="#"><img src="img/bao-ve/1.png" alt=""></a>
-                                <a href="#"><img src="img/bao-ve/2.png" alt=""></a>
+                            <div class="d-flex flex-wrap flex-c">
+                                <a href="#"><img src="img/bao-ve/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/bao-ve/Group-1.svg" alt=""></a>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-3" id="td">
                             <div class="title">Theo Dõi Chúng Tôi</div>
                             <div class="d-flex">
-                                <a href="#"><img src="img/theo-doi/1.png" alt=""></a>
-                                <a href="#"><img src="img/theo-doi/2.png" alt=""></a>
-                                <a href="#"><img src="img/theo-doi/3.png" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001329.svg" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001331.svg" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001332.svg" alt=""></a>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-3" id="tn">
                             <div class="title">Chơi Có Trách Nhiệm</div>
                             <div class="d-flex">
-                                <a href="#"><img src="img/trach-nhiem/1.png" alt=""></a>
-                                <a href="#"><img src="img/trach-nhiem/2.png" alt=""></a>
-                                <a href="#"><img src="img/trach-nhiem/3.png" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group 1000001326.svg" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group-1.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -388,6 +457,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </html>

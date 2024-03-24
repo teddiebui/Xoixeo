@@ -14,9 +14,9 @@
     <title>Trang Chủ</title>
 </head>
 
-<body>
+<body id="khuyen-mai-body">
 
-    <header>
+    <header class="pc display-none display-md">
         <section id="top-most">
             <div class="container position-relative">
                 <div class="row justify-content-between">
@@ -26,8 +26,7 @@
                         </a>
                     </div>
 
-                    <div class="col-auto col-md-12 d-flex justify-content-center align-items-start"
-                        id="head-nav-left">
+                    <div class="col-auto col-md-12 d-flex justify-content-center align-items-start" id="head-nav-left">
                         <div class="d-flex justify-content-between">
                             <div id="logo-container" class=" img-container">
                                 <img class="cskh-logo img-fluid" src="img/cskh.png" alt="">
@@ -35,8 +34,8 @@
                             <div class="logo-text">Chăm sóc khách hàng</div>
                         </div>
                         <div class="d-flex justify-content-between pb-2" id="top-controller">
-                            <div class=""><button class="button" id="login">Đăng nhập</button></div>
-                            <div class=""><button class="col button" id="register">Đăng ký</button></div>
+                            <div class=""><button class="button controller active" id="login">Đăng nhập</button></div>
+                            <div class=""><button class="button controller" id="register">Đăng ký</button></div>
                         </div>
                     </div>
 
@@ -74,7 +73,7 @@
                         <span class="">THƯƠNG HIỆU</span>
                     </a>
                     <a href="khuyen-mai.html"
-                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
+                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover hovered">
                         <div class="img-container w-auto g-0">
                             <img class="" src="img/head-nav-khuyenmai.svg" atl="khuyenmai">
                             <img class="display-none" src="img/hover/head-nav-khuyenmai.svg" atl="trang-chu2">
@@ -95,14 +94,219 @@
 
         <section id="banner">
             <div class="img-container w-100%">
-                <img class="" src="img/head-banner.png" alt="banner">
+                <img class="" src="img/khuyen-mai-banner.png" alt="banner">
             </div>
         </section>
     </header>
 
-    <main>
+    <header class="mobile display-md-none">
+        <div class="logo-container">
+            <div class="img-container">
+                <img class="img-fluid" src="img/logo1.png" alt="">
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <div class="container g-0">
+                <div class="row justify-content-center align-items-center text-center g-0">
+                    <div class="col">
+                        <a href="index.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-trangchu.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-trangchu.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">TRANG CHỦ</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="san-pham.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-sanpham.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-sanpham.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">SẢN PHẨM</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="thuong-hieu.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-thuonghieu.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-thuonghieu.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">THƯƠNG HIỆU</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="khuyen-mai.html" class="hover hovered">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-khuyenmai.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-khuyenmai.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">KHUYẾN MÃI</span>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="giai-tri.html" class="hover">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/head-nav-giaitri.svg" alt="">
+                                <img class="display-none" src="img/hover/head-nav-giaitri.svg" atl="trang-chu2">
+                            </div>
+                            <span class="title">GIẢI TRÍ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner">
+            <div class="img-container">
+                <img class="" src="img/khuyen-mai-banner.png" alt="" id="khuyen-mai-banner">
+            </div>
+        </section>
+
+        <section class="controller">
+            <div class="container">
+                <div class="d-flex justify-content-evenly pb-2" id="top-controller">
+                    <div class=""><button class="button controller" id="login">Đăng nhập</button></div>
+                    <div class=""><button class="button controller" id="register">Đăng ký</button></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="khuyen-mai">
         <div class="container">
-            
+
+            <div class="row rows-cols-4 controllers gx-2">
+                <div class="col">
+                    <button class="button controller active">HOT</button>
+                </div>
+                <div class="col">
+                    <button class="button controller">NẠP</button>
+                </div>
+                <div class="col">
+                    <button class="button controller">HOÀN TRẢ</button>
+                </div>
+                <div class="col">
+                    <button class="button controller">THỂ THAO</button>
+                </div>
+            </div>
+
+            <div class="promo-list">
+
+                <!-- HOT - DANH SACH KM -->
+                <div id="hot">
+                    <h1 class="header-1 text-center">DEAL NÓNG BỎNG</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_01-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_02-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/KM_04.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAP TIEN - DANH SACH KM -->
+                <div id="nap">
+                    <h1 class="header-1 text-center">CÀNG NẠP CÀNG THƯỞNG</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/cang-nap-cang-thuong-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/cang-nap-cang-thuong-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/cang-nap-cang-thuong-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/cang-nap-cang-thuong-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOAN TRA - DANH SACH KM -->
+                <div id="hoan-tra">
+                    <h1 class="header-1 text-center">CÓ CHƠI CÓ HOÀN TRẢ</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/hoan-tra-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/hoan-tra-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THE THAO - DANH SACH KM -->
+                <div id="the-thao">
+                    <h1 class="header-1 text-center">THẮNG LỚN THƯỞNG LỚN</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/the-thao-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/the-thao-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/the-thao-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-container">
+                                <img class="img-fluid" src="img/khuyen-mai/the-thao-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </main>
@@ -115,18 +319,20 @@
                     <a class="col-5" href="index.html" style="display:block;">
                         <img src="img/logo1.png" class="img-fluid" alt="">
                     </a>
-                    <div class="col-7 header-1 p-3">
-                        KÊNH GIẢI TRÍ <br>BÓNG ĐÁ ONLINE
+                    <div class="col-7 p-3">
+                        <span class="header-1 text-gradient-inline">KÊNH GIẢI TRÍ</span>
+                        <span class="header-1 text-gradient-inline">BÓNG ĐÁ ONLINE</span>
                     </div>
                 </div>
 
                 <!-- gioi thieu nen tang -->
-                <div class="col-12 col-lg-6" id="footer-intro">
-                    <div class="text-center p-3 w-75 m-auto" id="intro-title">XOIXEO - NỀN TẢNG XEM BÓNG ĐÁ TRỰC TUYẾN
+                <div class="col-12 col-lg-6 display-none display-md" id="footer-intro">
+                    <div class="text-center p-3 m-auto" id="intro-title">XOIXEO - NỀN TẢNG XEM BÓNG ĐÁ TRỰC TUYẾN
                         CHẤT LƯỢNG CAO</div>
-                    <div id="intro">NEW88 là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of Man và Khu
+                    <div id="intro">Xoixeo là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of Man và Khu
                         kinh tế Cagayan
-                        and Freeport cấp. Với bề dày kinh nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, NEW88 đã
+                        and Freeport cấp. Với bề dày kinh nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, Xoixeo
+                        đã
                         và
                         đang khẳng định vị thế của mình trên thị trường game trực tuyến .Với tư cách là một công ty trò
                         chơi
@@ -135,6 +341,7 @@
                         chuyên nghiệp đông đảo cung cấp sản phẩm ... <a href="#"
                             style="color: #FC8F00; text-decoration: none;">Xem thêm</a></div>
                 </div>
+
                 <!-- phuong thuc thanh toan -->
                 <div id="pttt" class="col-12 col-lg-auto">
                     <div class="title py-2">Phương Thức Thanh Toán</div>
@@ -172,39 +379,39 @@
                     <div class="row">
                         <div class="col-6 col-md-3" id="gp">
                             <div class="title">Giấy Phép</div>
-                            <div class="d-flex flex-wrap">
-                                <a href="#"><img src="img/giay-phep/1.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/2.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/3.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/4.png" alt=""></a>
-                                <a href="#"><img src="img/giay-phep/5.png" alt=""></a>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <a href="#"><img src="img/giay-phep/Vector.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-1.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-2.svg" alt=""></a>
+                                <a href="#"><img src="img/giay-phep/Group-3.svg" alt=""></a>
                             </div>
                         </div>
 
 
                         <div class="col-6 col-md-3" id="bv">
                             <div class="title">Bảo Vệ</div>
-                            <div class="d-flex flex-wrap">
-                                <a href="#"><img src="img/bao-ve/1.png" alt=""></a>
-                                <a href="#"><img src="img/bao-ve/2.png" alt=""></a>
+                            <div class="d-flex flex-wrap flex-c">
+                                <a href="#"><img src="img/bao-ve/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/bao-ve/Group-1.svg" alt=""></a>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-3" id="td">
                             <div class="title">Theo Dõi Chúng Tôi</div>
                             <div class="d-flex">
-                                <a href="#"><img src="img/theo-doi/1.png" alt=""></a>
-                                <a href="#"><img src="img/theo-doi/2.png" alt=""></a>
-                                <a href="#"><img src="img/theo-doi/3.png" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001329.svg" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001331.svg" alt=""></a>
+                                <a href="#"><img src="img/theo-doi/Group 1000001332.svg" alt=""></a>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-3" id="tn">
                             <div class="title">Chơi Có Trách Nhiệm</div>
                             <div class="d-flex">
-                                <a href="#"><img src="img/trach-nhiem/1.png" alt=""></a>
-                                <a href="#"><img src="img/trach-nhiem/2.png" alt=""></a>
-                                <a href="#"><img src="img/trach-nhiem/3.png" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group 1000001326.svg" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group.svg" alt=""></a>
+                                <a href="#"><img src="img/trach-nhiem/Group-1.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -225,6 +432,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </html>

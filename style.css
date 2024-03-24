@@ -14,7 +14,7 @@ body {
 
 
 header #logo-container {
-    padding: 0 ;
+    padding: 0;
 }
 
 header #logo-container {
@@ -24,55 +24,148 @@ header #logo-container {
 header #logo-text {
     font-family: "Inter", sans-serif;
 }
+
 header .cskh-logo {
     width: 75%;
-    display:block;
+    display: block;
 
-    
+
     /* padding-left: 1rem; */
     /* padding-right: 1rem; */
 }
+
+.mobile .logo-container {
+    background-color: #1F2124;
+}
+
+.mobile .logo-container .img-container {
+    height: 55px;
+}
+
+.mobile .logo-container img {
+    padding: 5px;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.mobile nav {
+    background-color: #25272B;
+}
+
+.mobile nav .container {
+    height: 55px;
+}
+
+.mobile nav .container .row {
+    height: 100%;
+}
+
+.mobile nav img {
+    height: 25px;
+    width: 100%;
+    display: block;
+}
+
+.mobile nav .title {
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.mobile .banner .img-container {
+    max-height: 150px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile .banner img {
+    display: block;
+    width: 200%;
+    position: relative;
+    transform: translate(-25%, 0);
+
+}
+
 
 
 
 header #top-most .logo-text {
     color: white;
     font-size: 0.8rem;
-    
+
 }
 
 #top-controller {
     margin-top: 0.5rem;
+    padding: 0 8vw;
 }
-header #top-controller button {
-    width: 7rem;
-    height: auto;
-    padding: 0.3rem;
 
+header #top-controller button.controller {
+    width: 33.3vw;
+    height: auto;
+    padding: 1.1vw;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
+    border-radius: 1.5rem;
 }
 
 
-header #top-controller div:first-child button {
+header #top-controller div:first-child button.controller {
     background-color: #FEAD00;
     border: 1px solid #FFFF65;
-    border-radius: 1rem;
     margin-right: 0.5rem;
-    
+    color: #000;
+
 }
 
-header #top-controller div:last-child button {
+button.controller {
     background-color: #383838;
     border: 1px solid #FFF;
-    border-radius: 1rem;
     color: #c1c1c1;
+
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    padding: 6px 0;
+    font-size: 10px;
+    border-radius: 1.5rem;
 }
+
+button.controller.active {
+    background-color: #FEAD00;
+    border: 1px solid #FFFF65;
+    color: #000;
+}
+
+button.controller:hover {
+    background-color: #7B7979;
+    border: 1px solid #FFF;
+    color: #c1c1c1;
+
+}
+
+button.controller.active:hover, button.controller#login:hover {
+    background-color: #FFDD65 !important;
+    border-color: #FEAD00 !important;
+    color: #000;
+
+}
+
 
 
 #head-nav-left {
     flex-direction: column;
+}
+
+#khuyen-mai-banner {
+    display: block;
+    width: 192%;
+    transform: translate(-25%, 0);
 }
 
 .img-container {
@@ -80,18 +173,20 @@ header #top-controller div:last-child button {
     height: auto;
 }
 
-.header-1 {
-    text-shadow: 0px 0px 5px #000;
-}
-
-
-
 .button {
     background-color: #FEAD00;
     border-radius: 15px;
     border: none;
     text-align: center;
     display: block;
+}
+
+#khuyen-mai-body, #san-pham-body {
+    background-position-y: 8%;
+}
+
+#san-pham-body {
+    background-position-y: 12%;
 }
 
 header nav a {
@@ -110,7 +205,7 @@ header nav a span {
     font-weight: 600;
 }
 
-header nav .row:first-of-type{
+.pc header nav .row:first-of-type {
     background-color: #1F2124;
 }
 
@@ -118,11 +213,12 @@ header nav .row:first-of-type{
     position: relative;
     overflow-x: hidden !important;
 }
+
 #banner img {
     width: 200%;
     position: relative;
     transform: translate(-25%, 0);
-    
+
 }
 
 
@@ -131,31 +227,57 @@ main {
     color: white;
 }
 
-main > div, main > div > div {
-    margin-top: 2rem;
-}
-main .header-1 {
-    font-size: 18px;
-    color: #FEAD00;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    
+main>div,
+main>div>div {
+    margin-top: 1.5rem;
 }
 
+main .header-1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+
+}
+
+#tinh-nang-noi-bat .img-container {
+    max-width: 45px;
+    margin-right: 0.5rem;
+}
+
+#tinh-nang-noi-bat img {
+    width: 100%;
+    display: block;
+
+}
 
 #tinh-nang-noi-bat .title {
     font-size: 9px;
     font-weight: bold;
+    margin-bottom: 0.3rem;
+    ;
 }
 
 #tinh-nang-noi-bat .caption {
     color: #DEDEDE;
-    font-size: 8px;
+    font-size: 7px;
     font-weight: normal;
 }
+
+#tinh-nang-noi-bat .row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 #middle {
     position: relative
 }
+
 #middle #zvvvs {
     position: relative;
     margin: auto;
@@ -175,23 +297,23 @@ main .header-1 {
     display: block;
     margin: auto;
 }
+
 #middle button {
     position: absolute;
-    width: 9rem;
-    height: 2.07rem;
+    width: 29vw;
+    height: 6.5vw;
     z-index: 999;
-    background-image: url("img/CUOC_NGAY.png");
+    background-image: url(img/CUOC_NGAY.png);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 0;
     right: 0;
-    transform: translate(-26%, -16%);
-
+    transform: translate(-36%, -24%)
 }
 
-#middle > div:first-child {
+#middle>div:first-child {
     margin-top: 0;
-} 
+}
 
 
 #middle #cup-c1 img {
@@ -200,8 +322,11 @@ main .header-1 {
     margin: auto;
 }
 
-#middle > div {
+#middle>div {
     margin-top: 1rem;
+}
+#san-pham-body #san-pham-da-dang {
+    margin-top: 3rem;
 }
 #san-pham-da-dang .item {
     position: relative;
@@ -214,8 +339,8 @@ main .header-1 {
 }
 
 #san-pham-da-dang .row .button {
-    width: 9.35rem;
-    height: 2.105rem;
+    width: 29vw;
+    height: 6.6vw;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -226,11 +351,12 @@ main .header-1 {
 
 
 
-#thut .row > div {
+#thut .row>div {
     width: auto;
     position: relative;
 }
-#thut .row .button{
+
+#thut .row .button {
     width: 200px;
     height: 40px;
     position: absolute;
@@ -240,7 +366,30 @@ main .header-1 {
     background-size: contain;
 }
 
+#thut .ga {
+    width: 100%;
+}
 
+#thut .img-container {
+    position: relative;
+}
+
+
+#thut .abs.zz {
+    position: absolute;
+    top: 77%;
+    left: 7%;
+    transform: translate(0%, 0%);
+    height: 25px;
+}
+#khuyen-mai .promo-list > * {
+    margin-top: 3rem;
+}
+#khuyen-mai .promo-list img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 #thut #ggt img {
     display: block;
@@ -255,30 +404,33 @@ main .header-1 {
     display: none;
 }
 
+.mobile nav img.display-none {
+    display: none;
+}
+
 #thut button#sgasd {
-    width: 29vw;
-    height: 5.6vw;
+    width: 27vw;
+    height: 5.4vw;
     position: absolute;
-    transform: translate(11%, -140%);
-    background-image: url("img/THAM_GIA_NGAY.png");
-    background-size: 100% 100%;
+    transform: translate(18%, -105%);
+    background-image: url(img/THAM_GIA_NGAY.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
+
 
 
 #gerwb {
     display: none;
 }
 
-footer > .container > .row > div {
+footer>.container>.row>div {
     margin-top: 1rem;
 }
 
 #footer-logo .header-1 {
-    color: #FC8F00;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 23px;
-
 }
 
 #kb .title {
@@ -291,30 +443,24 @@ footer > .container > .row > div {
     flex-wrap: wrap;
 }
 
-#kb .row > div {
+#kb .row>div {
     margin-top: 1.5rem;
 }
 
 #pttt a img {
-    height: 45px;
-}
-
-#td img, #tn img, #gp img {
-    margin-right: 1.3rem;
-    
-}
-
-
-#gp a img {
-    height: 25px;
-    margin-top: 0.5rem;
-}
-#gp div:last-child {
-    margin-top: 0.5rem;
-}
-
-#bv a img, #td a img, #tn a img {
     height: 33px;
+}
+
+#td img,
+#tn img,
+#gp img {
+    margin-right: 0.8rem;
+
+}
+
+
+#copyright {
+    margin-top: 2rem;
 }
 
 
@@ -324,22 +470,25 @@ footer > .container > .row > div {
     font-weight: 500;
 }
 
-#footer-intro, #pttt .title, #copyright {
+#footer-intro,
+#pttt .title,
+#copyright {
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 14px;
     text-align: justify;
 }
 
 nav .hover.hovered img:first-child {
     display: none;
 }
+
 nav .hover.hovered span {
-    color:#FC8F00
+    color: #FC8F00
 }
 
 nav .hover.hovered img:last-child {
     display: inline;
-    
+
 }
 
 #thut button#sgasd.hovered {
@@ -351,18 +500,11 @@ nav .hover.hovered img:last-child {
     background-image: url("img/hover/THAM_GIA_NGAY.png");
 }
 
-#middle  button.hovered {
+#middle button.hovered {
     background-image: url("img/hover/CUOC_NGAY.png");
 }
 
-#login:hover {
-    border-color: #FEAD00;
-    background-color: #FFDD65;
-}
 
-#register:hover {
-    background-color: #7B7979;
-}
 #san-pham-da-dang .row .button.hovered {
     background-image: url("img/hover/CHOI_NGAY.png");
 
@@ -372,22 +514,33 @@ nav .hover.hovered img:last-child {
     width: 100%;
 }
 
+.text-gradient-inline {
+    background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    display: inline-block;
+
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    
 
-    header nav .row:first-of-type{
+
+    header nav .row:first-of-type {
         background-color: inherit;
     }
 
     header nav {
         background-color: #1F2124;
     }
+
     header nav a {
         justify-content: center !important;
     }
+
     header nav a span {
         font-family: "Inter", sans-serif;
         font-size: 14px;
@@ -405,15 +558,15 @@ nav .hover.hovered img:last-child {
 
     main .header-1 {
         font-size: 40px;
-        color: #FEAD00;
         font-weight: bold;
         font-family: "Inter", sans-serif;
     }
 
 
-    #banner img{
+    #banner img {
         background-size: 100%
     }
+
     .display-sm {
         display: block;
     }
@@ -421,17 +574,18 @@ nav .hover.hovered img:last-child {
     .display-sm-none {
         display: none;
     }
+
     #sdsd {
         display: none;
     }
 
-    
+
 
     #gerwb {
         display: block;
     }
 
-    #tinh-nang-noi-bat > div {
+    #tinh-nang-noi-bat>div {
         border-right: 1px solid #FEAD00;
     }
 
@@ -447,23 +601,25 @@ nav .hover.hovered img:last-child {
         left: 50%;
         transform: translate(-50%, 50%);
     }
-    
+
     #middle {
         position: static;
     }
 
-    #middle .button{
+    #middle .button {
         width: 10.2rem;
         height: 2.37rem;
         bottom: -3%;
         left: 35%;
         transform: none;
     }
-    
 
-    
 
-    #footer-intro, #pttt .title, #copyright {
+
+
+    #footer-intro,
+    #pttt .title,
+    #copyright {
         color: #FFFFFF;
         font-size: 14px;
         text-align: justify;
@@ -483,6 +639,7 @@ nav .hover.hovered img:last-child {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
     #footer-logo .header-1 {
         font-size: 31px;
         font-weight: 600;
@@ -494,15 +651,26 @@ nav .hover.hovered img:last-child {
 
     header #top-most .logo-text {
         color: white;
-        font-size: 14px;
+        font-size: 13.06px;
     }
 
     header .cskh-logo {
         width: 100%;
-        height: 20px;
+        height: 19px;
         display: block;
-        margin-right: 10px;
-        /* padding-left: 1rem; */
+        margin-right: 4px;
+
+    }
+
+    #top-controller {
+        padding: 0;
+    }
+
+
+    header #top-controller button {
+        max-width: 130px;
+        max-height: 37px;
+        padding: 6px;
     }
 
     #head-nav-left {
@@ -517,27 +685,64 @@ nav .hover.hovered img:last-child {
         transform: none;
     }
 
+    #tinh-nang-noi-bat .img-container {
+        max-width: 100px;
+    }
+
+    #banner {
+        max-height: 350px;
+    }
+
     body {
         background-image: url("img/main-background.png");
     }
-
-
 
     #head-logo-container {
         position: absolute;
         top: 100%;
     }
-    nav {
-        padding: 5px 0;
-    }
-    nav .row > :first-child {
-        margin-left: 20%;
-    }
-    nav .row > * {
-        padding-right: 3rem;
+
+    #thut .img-container {
+        position: relative;
+        width: fit-content;
+        margin: auto;
     }
 
-    main > div, main > div > div {
+    .ga {
+        display: block;
+        max-height: 547px;
+    }
+
+    #thut .abs {
+        display: block;
+        position: absolute;
+        top: 30%;
+        transform: translate(0%, -50%);
+        height: 136px;
+    }
+
+    #thut .abs.zz {
+        top: 30%;
+        right: 6%;
+        left: auto;
+        transform: translate(0%, -50%);
+        height: 61px;
+    }
+
+    nav {
+        padding: 6px 0;
+    }
+
+    nav .row> :first-child {
+        margin-left: 20%;
+    }
+
+    nav .row>* {
+        padding-right: 2rem;
+    }
+
+    main>div,
+    main>div>div {
         margin-top: 4rem;
     }
 
@@ -545,7 +750,7 @@ nav .hover.hovered img:last-child {
         margin-bottom: 1.5rem;
     }
 
-    
+
     #tinh-nang-noi-bat .article .row {
         height: 100%;
     }
@@ -568,6 +773,16 @@ nav .hover.hovered img:last-child {
         display: block;
     }
 
+    #khuyen-mai-body, #san-pham-body {
+        background-position-y: 0%;
+    }
+
+    
+
+    header #top-controller button.controller {
+        padding: 0.5vw;
+    }
+
     #thut .row .button {
         width: 12.5rem;
         height: 2.5rem;
@@ -577,23 +792,34 @@ nav .hover.hovered img:last-child {
         left: 36%;
     }
 
-    #pttt a img {
-        height: 35px;
-        margin-right: 1.3rem;
+    #thut button#sgasd {
+        width: 14.4rem;
+        height: 2.9rem;
+        border-radius: 2.2rem;
+        transform: translate(51%, -117%);
     }
 
-    #td img, #tn img, #gp img {
+    #pttt a img {
+        height: 31px;
         margin-right: 1rem;
     }
-    
-    #bv a img, #td a img, #tn a img {
-        height: 33px;
+
+    #kb img {
+        height: 19.5px;
+    }
+
+    #td img,
+    #tn img,
+    #gp img {}
+
+    #td a img {
+        width: 19.5px;
+        height: 19.5px;
     }
 
     #gp a img {
-        height: 22px;
         margin-top: 0.1rem;
-        margin-right: 0.3rem;
+        margin-right: 0.6rem;
     }
 
     .display-md {
@@ -608,6 +834,6 @@ nav .hover.hovered img:last-child {
         align-items: center !important;
     }
 
-    
+
 
 }
