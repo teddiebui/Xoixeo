@@ -82,13 +82,94 @@ header .cskh-logo {
     position: relative;
 }
 
-.mobile .banner img {
-    display: block;
-    width: 200%;
+.mobile .banner img,
+#khuyen-mai-banner {
     position: relative;
-    transform: translate(-25%, 0);
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* transform: translate(-25%, 0); */
 
 }
+.mobile .banner, .slide {
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slideshow-container .slideshow-controller {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, 50%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.1rem;
+    width: 100%;
+}
+
+.slideshow-container .slideshow-controller>a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 12px;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #0d0d0d;
+}
+
+.slideshow-container .slideshow-controller-dot {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+.slideshow-container .slideshow-controller-dot .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    box-shadow: 0 0 3px #000;
+}
+
+.slideshow-container .slideshow-controller-dot .dot.active {
+    background-color: #717171;
+}
+
+.slide {
+    display: none !important;
+    opacity: 0%;
+    width: 100%;
+    position: relative;
+    z-index: -50
+}
+
+@keyframes appear {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+.slide.current {
+    display: block !important;
+    opacity: 100%;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
 
 
 
@@ -149,7 +230,8 @@ button.controller:hover {
 
 }
 
-button.controller.active:hover, button.controller#login:hover {
+button.controller.active:hover,
+button.controller#login:hover {
     background-color: #FFDD65 !important;
     border-color: #FEAD00 !important;
     color: #000;
@@ -160,12 +242,6 @@ button.controller.active:hover, button.controller#login:hover {
 
 #head-nav-left {
     flex-direction: column;
-}
-
-#khuyen-mai-banner {
-    display: block;
-    width: 192%;
-    transform: translate(-25%, 0);
 }
 
 .img-container {
@@ -181,7 +257,8 @@ button.controller.active:hover, button.controller#login:hover {
     display: block;
 }
 
-#khuyen-mai-body, #san-pham-body {
+#khuyen-mai-body,
+#san-pham-body {
     background-position-y: 8%;
 }
 
@@ -325,9 +402,11 @@ main .header-1 {
 #middle>div {
     margin-top: 1rem;
 }
+
 #san-pham-body #san-pham-da-dang {
     margin-top: 3rem;
 }
+
 #san-pham-da-dang .item {
     position: relative;
     margin-bottom: 1.5rem;
@@ -382,10 +461,12 @@ main .header-1 {
     transform: translate(0%, 0%);
     height: 25px;
 }
-#khuyen-mai .promo-list > * {
+
+#khuyen-mai .promo-list>* {
     margin-top: 3rem;
 }
-#khuyen-mai .promo-list img{
+
+#khuyen-mai .promo-list img {
     display: block;
     width: 100%;
     height: auto;
@@ -486,7 +567,7 @@ nav .hover.hovered img:first-child {
     border-radius: 0.7rem;
 }
 
-.video-container > * {
+.video-container>* {
     width: 100%;
     border-radius: 0.7rem;
     border: 2px solid #FFD76F;
@@ -542,6 +623,7 @@ nav .hover.hovered img:last-child {
         font-size: 23px;
     }
 }
+
 @media (min-width: 576px) {
 
 
@@ -656,6 +738,14 @@ nav .hover.hovered img:last-child {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    #khuyen-mai .controllers {
+        display: none;
+    }
+
+    #khuyen-mai .promo-list>div {
+        display: block;
+    }
 
     #footer-logo .header-1 {
         font-size: 31px;
@@ -781,8 +871,7 @@ nav .hover.hovered img:last-child {
     }
 
     #tinh-nang-noi-bat .img-container {
-        margin: auto;
-        padding: 15px;
+        padding: 0.6rem;
     }
 
     #tinh-nang-noi-bat .img-container img {
@@ -790,11 +879,16 @@ nav .hover.hovered img:last-child {
         display: block;
     }
 
-    #khuyen-mai-body, #san-pham-body {
+    #tinh-nang-noi-bat .article>div:nth-child(2) {
+        width: 60%;
+    }
+
+    #khuyen-mai-body,
+    #san-pham-body {
         background-position-y: 0%;
     }
 
-    header.pc.display-none.display-md > nav > div > div {
+    header.pc.display-none.display-md>nav>div>div {
         justify-content: flex-start !important;
     }
 
