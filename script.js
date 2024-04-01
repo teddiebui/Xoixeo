@@ -36,7 +36,6 @@ $(document).ready(()=>{
         index < $(".pc .slide").length-1 ? index++ : index=0
         current.removeClass("current")
         $($(".pc .slide")[index]).addClass("current")
-        console.log("next Index: ", index)
         $(".pc .dot.active").removeClass("active")
         $($(".pc .dot")[index]).addClass("active")
     }
@@ -48,7 +47,6 @@ $(document).ready(()=>{
         index < $(".mobile .slide").length-1 ? index++ : index=0
         current.removeClass("current")
         $($(".mobile .slide")[index]).addClass("current")
-        console.log("next Index: ", index)
         $(".mobile .dot.active").removeClass("active")
         $($(".mobile .dot")[index]).addClass("active")
     }
@@ -60,7 +58,6 @@ $(document).ready(()=>{
         index < $(".pc .slide").length-1 ? index++ : index=0
         current.removeClass("current")
         $($(".pc .slide")[index]).addClass("current")
-        console.log("next Index: ", index)
         $(".pc .dot.active").removeClass("active")
         $($(".pc .dot")[index]).addClass("active")
     }
@@ -72,7 +69,6 @@ $(document).ready(()=>{
         index < $(".mobile .slide").length-1 ? index++ : index=0
         current.removeClass("current")
         $($(".mobile .slide")[index]).addClass("current")
-        console.log("next Index: ", index)
         $(".mobile .dot.active").removeClass("active")
         $($(".mobile .dot")[index]).addClass("active")
     }
@@ -103,4 +99,20 @@ $(document).ready(()=>{
     interval = setInterval(slideNext, 3000)
     m_interval = setInterval(mSlideNext, 3000)
 
+    $("video")[0].play();
+
+    //floating video
+    $(".abs.zz").click(function() {
+        $("#thuong-hieu-video").show()
+        $('html, body').css({
+            overflow: 'hidden',
+        });
+
+        $(".my-modal .cancel").click(function() {
+            $("#thuong-hieu-video").hide()
+            $('html, body').css({
+                overflow: 'auto',
+            });
+        })
+    })
 })
