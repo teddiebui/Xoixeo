@@ -123,7 +123,7 @@ $(document).ready(()=>{
             $('html, body').css({
                 overflow: 'auto',
             });
-            $("#thuong-hieu-video video")[0].video.pause()
+            $("#thuong-hieu-video video")[0].pause()
         })
     })
 })
