@@ -104,15 +104,26 @@ $(document).ready(()=>{
     //floating video
     $(".abs.zz").click(function() {
         $("#thuong-hieu-video").show()
+        $("#thuong-hieu-video video")[0].play()
+        $('html').keyup(function(e) {
+            if (e.key === "Escape") {
+                console.log("keypress Yeah")
+                $("#thuong-hieu-video").hide()
+                $(this).unbind("keyup")
+                $("#thuong-hieu-video video")[0].video.pause()
+            }
+        })
         $('html, body').css({
             overflow: 'hidden',
         });
 
+        //close button
         $(".my-modal .cancel").click(function() {
             $("#thuong-hieu-video").hide()
             $('html, body').css({
                 overflow: 'auto',
             });
+            $("#thuong-hieu-video video")[0].video.pause()
         })
     })
 })
