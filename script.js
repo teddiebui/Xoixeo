@@ -100,6 +100,8 @@ $(document).ready(()=>{
     m_interval = setInterval(mSlideNext, 3000)
 
     $("video")[0].play();
+    $("video")[0].muted = false;
+
 
     //floating video
     $(".abs.zz").click(function() {
