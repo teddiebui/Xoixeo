@@ -100,8 +100,8 @@ $(document).ready(() => {
     m_interval = setInterval(mSlideNext, 3000)
 
     setTimeout(function() {
-        $("video")[0].play();
-        $("video")[0].muted = false;
+        // $("video")[0].play();
+        // $("video")[0].muted = false;
         console.log("timeout play")
     }, 500)
 
