@@ -101,9 +101,9 @@ $(document).ready(() => {
 
     setTimeout(function() {
         // $("video")[0].play();
-        // $("video")[0].muted = false;
-        console.log("timeout play")
-    }, 500)
+        $("video")[0].muted = false;
+        console.log("timeout muted no more")
+    }, 800)
 
     //floating video
     $(".abs.zz").click(function () {
