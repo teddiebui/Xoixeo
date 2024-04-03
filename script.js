@@ -13,11 +13,11 @@ $(document).ready(() => {
         }
     )
 
-    let banner_prev = $(".pc .slideshow-container .slideshow-controller>a.next")
-    let banner_next = $(".pc .slideshow-container .slideshow-controller>a.prev")
+    let banner_next = $(".pc .slideshow-container .slideshow-controller>a.next")
+    let banner_prev= $(".pc .slideshow-container .slideshow-controller>a.prev")
 
-    let m_banner_prev = $(".mobile .slideshow-container .slideshow-controller>a.next")
-    let m_banner_next = $(".mobile .slideshow-container .slideshow-controller>a.prev")
+    let m_banner_next = $(".mobile .slideshow-container .slideshow-controller>a.next")
+    let m_banner_prev = $(".mobile .slideshow-container .slideshow-controller>a.prev")
 
     $(".pc .slide").each(function () {
         if ($(".pc .slide").index(this) == 0) {
@@ -55,7 +55,7 @@ $(document).ready(() => {
         //add class
         current = $(".pc .slide.current")
         index = $(".pc .slide").index(current)
-        index < $(".pc .slide").length - 1 ? index++ : index = 0
+        index > 0 ? index-- : index=$(".pc .slide").length - 1
         current.removeClass("current")
         $($(".pc .slide")[index]).addClass("current")
         $(".pc .dot.active").removeClass("active")
@@ -66,7 +66,7 @@ $(document).ready(() => {
         //add class
         current = $(".mobile .slide.current")
         index = $(".mobile .slide").index(current)
-        index < $(".mobile .slide").length - 1 ? index++ : index = 0
+        index > 0 ? index-- : index = $(".pc .slide").length - 1
         current.removeClass("current")
         $($(".mobile .slide")[index]).addClass("current")
         $(".mobile .dot.active").removeClass("active")
@@ -93,7 +93,7 @@ $(document).ready(() => {
     m_banner_prev.click(function () {
         clearInterval(m_interval)
         mSlidePrev()
-        m_interval = setInterval(mSlidePrev, 3000)
+        m_interval = setInterval(mSlideNext, 3000)
     })
 
     interval = setInterval(slideNext, 3000)
