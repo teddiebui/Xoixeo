@@ -91,6 +91,7 @@ header .cskh-logo {
     background: #000812;
     opacity: 75%;
 }
+
 .my-modal {
     position: fixed;
     z-index: 55;
@@ -115,6 +116,7 @@ header .cskh-logo {
     border: none;
     border-radius: 0px;
 }
+
 .modal-content .cancel {
     font-family: 'Inter', sans-serif;
     font-size: 19px;
@@ -1016,7 +1018,7 @@ nav .hover.hovered img:last-child {
         top: 35%;
 
     }
-    
+
     .slideshow-container .slideshow-controller>a {
         color: white;
         font-size: 25px;
@@ -1024,6 +1026,98 @@ nav .hover.hovered img:last-child {
         padding: 3px 12px;
         text-decoration: none;
         text-shadow: 0px 0px 10px #0d0d0d;
+    }
+
+    #tinh-nang #side-nav {
+        max-widtH: 250px;
+    }
+
+    #tinh-nang #side-nav>button {
+
+        background-color: #303338;
+        border-radius: 35px;
+        border: 2px solid #7E889A;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+
+
+        color: #E1E4EB;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #tinh-nang #side-nav>button:not(:first-child) {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    #tinh-nang #side-nav>button.active {
+        border-color: #FFFF65;
+        background-color: #FEAD00;
+        color: #000;
+        font-weight: 500;
+    }
+
+    #main-content {
+        padding-left: 50px;
+    }
+
+    #sp-list {
+        display: none;
+    }
+    .san-pham-article {
+        border: none;
+        border-radius: none;
+        background-color: #1F222C;
+        width: 80%;
+        margin: auto;
+        padding: 11px;
+        color: #BDC4DC;
+        font-family: 'Inter', sans-serif;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .san-pham-article:not(:last-of-type) {
+        border-bottom: 1px solid #999EAF;
+    }
+
+    .san-pham-article.active {
+        color: #FEE995;
+        border-color: #FEE995;
+    }
+
+    #tinh-nang #main-content article h1, #tinh-nang #main-content article h3{
+        background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    #tinh-nang #main-content article a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #FFD76F;
+    }
+
+    #tinh-nang #main-content article ul {
+        list-style-type: circle;
+    }
+
+    #tinh-nang {
+        background: none;
+        background-color: #1A1A1A;
+    }
+
+    #main-content > * {
+        display: none;
+    }
+
+    #main-content > .show {
+        display: block;
     }
 
 
