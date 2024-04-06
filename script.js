@@ -99,11 +99,6 @@ $(document).ready(() => {
     interval = setInterval(slideNext, 3000)
     m_interval = setInterval(mSlideNext, 3000)
 
-    setTimeout(function() {
-        // $("video")[0].play();
-        $("video")[0].muted = false;
-        console.log("timeout muted no more")
-    }, 800)
 
     //floating video
     $(".abs.zz").click(function () {
