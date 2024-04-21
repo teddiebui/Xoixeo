@@ -1,8 +1,5 @@
 $(document).ready(() => {
-    let cdn = "https://xoixeotv.cdn.vccloud.vn";
 
-
-    console.log("hello")
 
     $(".hover").hover(
         function () { // Mouse enter
