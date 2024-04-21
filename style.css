@@ -4,7 +4,7 @@ body * {
 }
 
 body {
-    background-image: url("img/BG_MB_93Kb\ 1.png");
+    background-image: url("img/BG_MB_93Kb\ 1.webp");
     background-size: cover;
     position: relative;
 }
@@ -449,7 +449,7 @@ main .header-1 {
     width: 29vw;
     height: 6.5vw;
     z-index: 5;
-    background-image: url(img/CUOC_NGAY.png);
+    background-image: url(img/CUOC_NGAY.webp);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 0;
@@ -493,7 +493,7 @@ main .header-1 {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-image: url("img/CHOI_NGAY.png");
+    background-image: url("img/CHOI_NGAY.webp");
     background-size: contain;
 }
 
@@ -510,7 +510,7 @@ main .header-1 {
     position: absolute;
     transform: translate(82%, -146%);
 
-    background-image: url("img/THAM_GIA_NGAY.png");
+    background-image: url("img/THAM_GIA_NGAY.webp");
     background-size: contain;
 }
 
@@ -563,7 +563,7 @@ main .header-1 {
     height: 5.4vw;
     position: absolute;
     transform: translate(18%, -105%);
-    background-image: url(img/THAM_GIA_NGAY.png);
+    background-image: url(img/THAM_GIA_NGAY.webp);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -653,21 +653,21 @@ nav .hover.hovered img:last-child {
 }
 
 #thut button#sgasd.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
+    background-image: url("img/hover/THAM_GIA_NGAY.webp");
 
 }
 
 #thut .row .button.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
+    background-image: url("img/hover/THAM_GIA_NGAY.webp");
 }
 
 #middle button.hovered {
-    background-image: url("img/hover/CUOC_NGAY.png");
+    background-image: url("img/hover/CUOC_NGAY.webp");
 }
 
 
 #san-pham-da-dang .row .button.hovered {
-    background-image: url("img/hover/CHOI_NGAY.png");
+    background-image: url("img/hover/CHOI_NGAY.webp");
 
 }
 
@@ -872,7 +872,7 @@ nav .hover.hovered img:last-child {
     }
 
     body {
-        background-image: url("img/main-background.png");
+        background-image: url("img/main-background.webp");
     }
 
     #head-logo-container {
