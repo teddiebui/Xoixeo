@@ -10,14 +10,11 @@ $(document).ready(() => {
         }
     )
 
-    let banner_next = $(".pc .slideshow-container .slideshow-controller>a.next")
-    let banner_prev= $(".pc .slideshow-container .slideshow-controller>a.prev")
-
-    let m_banner_next = $(".mobile .slideshow-container .slideshow-controller>a.next")
-    let m_banner_prev = $(".mobile .slideshow-container .slideshow-controller>a.prev")
-
-    $(".pc .slide").each(function () {
-        if ($(".pc .slide").index(this) == 0) {
+    let banner_next = $(".slideshow-container .slideshow-controller>a.next")
+    let banner_prev= $(".slideshow-container .slideshow-controller>a.prev")
+    
+    $(".slide").each(function () {
+        if ($(".slide").index(this) == 0) {
             html = '<span class="dot active"></span>'
         } else {
             html = '<span class="dot"></span>'
@@ -28,46 +25,24 @@ $(document).ready(() => {
 
     function slideNext() {
         //add class
-        current = $(".pc .slide.current")
-        index = $(".pc .slide").index(current)
-        index < $(".pc .slide").length - 1 ? index++ : index = 0
+        current = $(".slide.current")
+        index = $(".slide").index(current)
+        index < $(".slide").length - 1 ? index++ : index = 0
         current.removeClass("current")
-        $($(".pc .slide")[index]).addClass("current")
-        $(".pc .dot.active").removeClass("active")
-        $($(".pc .dot")[index]).addClass("active")
-    }
-
-    function mSlideNext() {
-        //add class
-        current = $(".mobile .slide.current")
-        index = $(".mobile .slide").index(current)
-        index < $(".mobile .slide").length - 1 ? index++ : index = 0
-        current.removeClass("current")
-        $($(".mobile .slide")[index]).addClass("current")
-        $(".mobile .dot.active").removeClass("active")
-        $($(".mobile .dot")[index]).addClass("active")
+        $($(".slide")[index]).addClass("current")
+        $(".dot.active").removeClass("active")
+        $($(".dot")[index]).addClass("active")
     }
 
     function slidePrev() {
         //add class
-        current = $(".pc .slide.current")
-        index = $(".pc .slide").index(current)
-        index > 0 ? index-- : index=$(".pc .slide").length - 1
+        current = $(".slide.current")
+        index = $(".slide").index(current)
+        index > 0 ? index-- : index=$(".slide").length - 1
         current.removeClass("current")
-        $($(".pc .slide")[index]).addClass("current")
-        $(".pc .dot.active").removeClass("active")
-        $($(".pc .dot")[index]).addClass("active")
-    }
-
-    function mSlidePrev() {
-        //add class
-        current = $(".mobile .slide.current")
-        index = $(".mobile .slide").index(current)
-        index > 0 ? index-- : index = $(".pc .slide").length - 1
-        current.removeClass("current")
-        $($(".mobile .slide")[index]).addClass("current")
-        $(".mobile .dot.active").removeClass("active")
-        $($(".mobile .dot")[index]).addClass("active")
+        $($(".slide")[index]).addClass("current")
+        $(".dot.active").removeClass("active")
+        $($(".dot")[index]).addClass("active")
     }
 
     banner_next.click(function () {
@@ -81,20 +56,7 @@ $(document).ready(() => {
         slidePrev()
         interval = setInterval(slideNext, 3000)
     })
-
-    m_banner_next.click(function () {
-        clearInterval(m_interval)
-        mSlideNext()
-        m_interval = setInterval(mSlideNext, 3000)
-    })
-    m_banner_prev.click(function () {
-        clearInterval(m_interval)
-        mSlidePrev()
-        m_interval = setInterval(mSlideNext, 3000)
-    })
-
     interval = setInterval(slideNext, 3000)
-    m_interval = setInterval(mSlideNext, 3000)
 
 
     //floating video

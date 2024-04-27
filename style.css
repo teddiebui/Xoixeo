@@ -4,6 +4,7 @@ body * {
 }
 
 body {
+    background-color: #121212;
     background-image: url("img/BG_MB_93Kb\ 1.webp");
     background-size: cover;
     position: relative;
@@ -15,30 +16,13 @@ body {
 
 
 header #logo-container {
-    padding: 0;
-}
-
-header #logo-container {
     width: 13%;
-}
-
-header #logo-text {
-    font-family: "Inter", sans-serif;
+    padding: 0;
 }
 
 header .cskh-logo {
     width: 75%;
     display: block;
-
-
-    /* padding-left: 1rem; */
-    /* padding-right: 1rem; */
-}
-
-
-
-.mobile .logo-container {
-    background-color: #1F2124;
 }
 
 .video-container {
@@ -46,36 +30,17 @@ header .cskh-logo {
 }
 
 
-
-.mobile .logo-container .img-container {
-    height: 55px;
+#head-logo-container img {
+    max-height: 55px;
 }
 
-
-
-.mobile .logo-container img {
-    padding: 5px;
-    height: 100%;
-    display: block;
-    margin: auto;
+#head-nav-left {
+    position: absolute;
+    top: 100%;
 }
 
-.mobile nav {
+body > header.position-relative > nav {
     background-color: #25272B;
-}
-
-.mobile nav .container {
-    height: 55px;
-}
-
-.mobile nav .container .row {
-    height: 100%;
-}
-
-.mobile nav img {
-    height: 25px;
-    width: 100%;
-    display: block;
 }
 
 .my-modal {
@@ -126,22 +91,6 @@ header .cskh-logo {
     /* font-style: italic; */
 }
 
-.mobile nav .title {
-    margin-top: 0.2rem;
-    margin-bottom: 0.1rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 8px;
-    font-weight: 600;
-}
-
-.mobile .banner .img-container {
-    max-height: 150px;
-
-    overflow: hidden;
-    position: relative;
-}
-
-.mobile .banner img,
 #khuyen-mai-banner {
     position: relative;
     z-index: -1;
@@ -309,11 +258,6 @@ button.controller#login:hover {
 }
 
 
-
-#head-nav-left {
-    flex-direction: column;
-}
-
 .img-container {
     width: 100%;
     height: auto;
@@ -325,15 +269,6 @@ button.controller#login:hover {
     border: none;
     text-align: center;
     display: block;
-}
-
-#khuyen-mai-body,
-#san-pham-body {
-    background-position-y: 8%;
-}
-
-#san-pham-body {
-    background-position-y: 12%;
 }
 
 header nav a {
@@ -352,7 +287,19 @@ header nav a span {
     font-weight: 600;
 }
 
-.pc header nav .row:first-of-type {
+
+
+#khuyen-mai-body,
+#san-pham-body {
+    background-position-y: 8%;
+}
+
+#san-pham-body {
+    background-position-y: 12%;
+}
+
+
+ header nav .row:first-of-type {
     background-color: #1F2124;
 }
 
@@ -362,9 +309,10 @@ header nav a span {
 }
 
 #banner img {
-    width: 200%;
+    width: 143%;
+    height:34vw;
     position: relative;
-    transform: translate(-25%, 0);
+    transform: translate(-12.5%, 0);
 
 }
 
@@ -372,6 +320,9 @@ header nav a span {
 
 main {
     color: white;
+    position: relative;
+    top: 2rem;
+    margin-bottom: 2rem;
 }
 
 main>div,
@@ -735,6 +686,10 @@ nav .hover.hovered img:last-child {
         background-size: 100%
     }
 
+    #head-nav-left {
+        position: static;
+    }
+
     .display-sm {
         display: block;
     }
@@ -851,14 +806,14 @@ nav .hover.hovered img:last-child {
         padding: 6px;
     }
 
-    #head-nav-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between !important;
+    #head-logo-container img {
+        max-height: 78px;
+        height: 78px;
     }
 
     #banner img {
         width: 100%;
+        height: 100%;
         position: static;
         transform: none;
     }
@@ -877,7 +832,7 @@ nav .hover.hovered img:last-child {
 
     #head-logo-container {
         position: absolute;
-        top: 100%;
+        top: 16%;
     }
 
     #thut .img-container {
@@ -917,6 +872,11 @@ nav .hover.hovered img:last-child {
 
     nav .row>* {
         padding-right: 2rem;
+    }
+
+    main {
+        top: 0rem;
+        margin-bottom: 0rem;
     }
 
     main>div,
@@ -964,7 +924,7 @@ nav .hover.hovered img:last-child {
         background-position-y: 0%;
     }
 
-    header.pc.display-none.display-md>nav>div>div {
+    header.display-none.display-md>nav>div>div {
         justify-content: flex-start !important;
     }
 
@@ -1017,10 +977,6 @@ nav .hover.hovered img:last-child {
 
     .display-md-none {
         display: none;
-    }
-
-    #head-nav-left {
-        align-items: center !important;
     }
 
     .slideshow-container .slideshow-controller {
@@ -1132,3 +1088,4 @@ nav .hover.hovered img:last-child {
 
 
 }
+

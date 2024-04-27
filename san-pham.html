@@ -44,28 +44,39 @@
     <!-- facebook twitter behaviour -->
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVDJYXF1R"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GZVDJYXF1R');
+</script>
 
 <body id="san-pham-body">
-    <header class="pc display-none display-md">
+    <header class="position-relative">
         <section id="top-most">
-            <div class="container position-relative">
-                <div class="row justify-content-between">
+            <div class="container">
+                <div class="row justify-content-center justify-content-md-start">
                     <div class="col-auto" id="head-logo-container">
-                        <a href="/" style="display:block;">
+                        <a href="/index.html" style="display:block;">
                             <img class="img-fluid w-auto display" src="img/logo1.webp" alt="xoixeotv-logo">
                         </a>
                     </div>
 
-                    <div class="col-auto col-md-12 d-flex justify-content-center align-items-start" id="head-nav-left">
-                        <div class="d-flex justify-content-between">
+                    <div class="col-auto col-md-12 d-flex justify-content-center justify-content-md-between align-items-center" id="head-nav-left">
+                        <div class="d-none d-md-flex justify-content-between ">
                             <div id="logo-container" class=" img-container">
-                                <img class="cskh-logo img-fluid" src="img/cskh.webp" alt="contact-support">
+                                <img class="cskh-logo img-fluid" src="img/cskh.webp" alt="">
                             </div>
                             <div class="logo-text">Chăm sóc khách hàng</div>
                         </div>
                         <div class="d-flex justify-content-between pb-2" id="top-controller">
-                            <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller active" id="login">Đăng nhập</button></a></div>
-                            <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller" id="register">Đăng ký</button></a></div>
+                            <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller active"
+                                        id="login">Đăng nhập</button></a></div>
+                            <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller"
+                                        id="register">Đăng ký</button></a></div>
                         </div>
                     </div>
 
@@ -75,26 +86,26 @@
 
         <nav>
             <div class="container p-1">
-                <div class="row gx-0 py-1 justify-content-end align-items-center">
-                    <a href="/"
-                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
+                <div class="row gx-0 py-1 justify-content-start align-items-center">
+                    <a href="/index.html"
+                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover hovered">
                         <div class="img-container w-auto g-0">
                             <img class="" src="img/head-nav-trangchu.svg" alt="navigate-to-home">
                             <img class="display-none" src="img/hover/head-nav-trangchu.svg"
                                 alt="navigate-to-home-hovered">
                         </div>
-                        <span class="">TRANG CHỦ</span>
+                        <span>TRANG CHỦ</span>
                     </a>
 
 
                     <a href="san-pham.html"
-                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover hovered">
+                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
                         <div class="img-container w-auto g-0 display-md-none">
                             <img class="" src="img/head-nav-sanpham.svg" height="80%" alt="navigate-to-products">
                             <img class="display-none" src="img/hover/head-nav-sanpham.svg"
                                 alt="navigate-to-products-hovered">
                         </div>
-                        <span class="">SẢN PHẨM</span>
+                        <span>SẢN PHẨM</span>
                     </a>
                     <a href="#"
                         class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
@@ -103,7 +114,7 @@
                             <img class="display-none" src="img/hover/head-nav-thuonghieu.svg"
                                 alt="navigate-to-brand-hovered">
                         </div>
-                        <span class="">THƯƠNG HIỆU</span>
+                        <span>THƯƠNG HIỆU</span>
                     </a>
                     <a href="khuyen-mai.html"
                         class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
@@ -112,7 +123,7 @@
                             <img class="display-none" src="img/hover/head-nav-khuyenmai.svg"
                                 alt="navigate-to-promos-hovered">
                         </div>
-                        <span class="">KHUYẾN MÃI</span>
+                        <span>KHUYẾN MÃI</span>
                     </a>
                     <a href="#"
                         class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
@@ -124,117 +135,49 @@
                         <span>GIẢI TRÍ</span>
                     </a>
                     <a href="tinh-nang.html"
-                        class="col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover">
+                        class="d-none d-md-block col col-md-auto d-flex flex-column text-center align-items-evenly justify-content-between hover ">
                         <div class="img-container w-auto g-0 display-md-none">
                         </div>
                         <span>TÍNH NĂNG</span>
                     </a>
-
                 </div>
             </div>
         </nav>
 
         <section id="banner">
-            <div class="img-container w-100%">
-                <img class="" src="img/san-pham-banner.webp" alt="production-page-banner">
-            </div>
-        </section>
-    </header>
-
-    <header class="mobile display-md-none">
-        <div class="logo-container">
-            <div class="img-container">
-                <img class="img-fluid" src="img/logo1.webp" alt="xoixeotv-logo">
-            </div>
-        </div>
-
-        <nav class="top-nav">
-            <div class="container g-0">
-                <div class="row justify-content-center align-items-center text-center g-0">
-                    <div class="col">
-                        <a href="/" class="hover">
-                            <div class="img-container">
-                                <img class="img-fluid" src="img/head-nav-trangchu.svg" alt="mobile-navigate-to-home">
-                                <img class="display-none" src="img/hover/head-nav-trangchu.svg"
-                                    alt="mobile-navigate-to-home-hovered">
-                            </div>
-                            <span class="title">TRANG CHỦ</span>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="san-pham.html" class="hover hovered">
-                            <div class="img-container">
-                                <img class="img-fluid" src="img/head-nav-sanpham.svg" alt="mobile-navigate-to-products">
-                                <img class="display-none" src="img/hover/head-nav-sanpham.svg"
-                                    alt="mobile-navigate-to-products-hovered">
-                            </div>
-                            <span class="title">SẢN PHẨM</span>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="hover">
-                            <div class="img-container">
-                                <img class="img-fluid" src="img/head-nav-thuonghieu.svg" alt="mobile-navigate-to-brand">
-                                <img class="display-none" src="img/hover/head-nav-thuonghieu.svg"
-                                    alt="mobile-navigate-to-brand-hovered">
-                            </div>
-                            <span class="title">THƯƠNG HIỆU</span>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="khuyen-mai.html" class="hover">
-                            <div class="img-container">
-                                <img class="img-fluid" src="img/head-nav-khuyenmai.svg" alt="mobile-navigate-to-promos">
-                                <img class="display-none" src="img/hover/head-nav-khuyenmai.svg"
-                                    alt="mobile-navigate-to-promos-hovered">
-                            </div>
-                            <span class="title">KHUYẾN MÃI</span>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="hover">
-                            <div class="img-container">
-                                <img class="img-fluid" src="img/head-nav-giaitri.svg"
-                                    alt="mobile-navigate-to-entertainment">
-                                <img class="display-none" src="img/hover/head-nav-giaitri.svg"
-                                    alt="mobile-navigate-to-entertainment-hovered">
-                            </div>
-                            <span class="title">GIẢI TRÍ</span>
-                        </a>
-                    </div>
+            <div class="slideshow-container d-flex">
+                <div class="slideshow-controller">
+                    <a href="#" class="prev">&#10094;</a>
+                    <a href="#" class="next">&#10095;</a>
                 </div>
-            </div>
-        </nav>
-
-        <section class="banner">
-            <div class="img-container">
-                <img class="" src="img/mobile-san-pham-banner.webp" alt="mobile-production-page-banner">
-            </div>
-        </section>
-
-        <section class="controller">
-            <div class="container">
-                <div class="d-flex justify-content-evenly pb-2" id="top-controller">
-                    <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller active" id="login">Đăng nhập</button></a></div>
-                    <div class=""><a href="https://bit.ly/4d6FIyt"><button class="button controller" id="register">Đăng ký</button></a></div>
+                <div class="slideshow-controller-dot">
+                </div>
+                <div class="slide current">
+                    <a href="https://bit.ly/4d6FIyt"><img class="" src="img/pc-banner-slider/Property 1=Default.webp"
+                            alt="bảo hiểm thể thao" title="bảo hiểm thể thao"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://bit.ly/4d6FIyt"><img class="" src="img/pc-banner-slider/Property 1=Variant2.webp"
+                            alt="tặng nạp tiền" tltle="tặng nạp tiền"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://bit.ly/4d6FIyt"><img class="" src="img/pc-banner-slider/Property 1=Variant3.webp"
+                            alt="ngày vàng thưởng lớn" title="ngày vàng thưởng lớn"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://bit.ly/4d6FIyt"><img class="" src="img/pc-banner-slider/Property 1=Variant4.webp"
+                            alt="thưởng đăng ký tài khoản" title="thưởng đăng ký tài khoản"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://bit.ly/4d6FIyt"><img class="" src="img/pc-banner-slider/Property 1=Variant5.webp"
+                            alt="thưởng đặc biệt" title="thưởng đặc biệt"></a>
                 </div>
             </div>
         </section>
+
     </header>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVDJYXF1R"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-GZVDJYXF1R');
-    </script>
+    
 
 
     <main>
@@ -285,7 +228,7 @@
             <div class="" id="divider"></div>
             <div class="row">
                 <div class="col-12 col-lg-6 row row-cols-2 g-0 text-center align-items-center" id="footer-logo">
-                    <a class="col-5" href="/" style="display:block;">
+                    <a class="col-5" href="/index.html" style="display:block;">
                         <img src="img/logo1.webp" class="img-fluid" alt="xoixeotv-logo">
                     </a>
                     <div class="col-7 p-3">
