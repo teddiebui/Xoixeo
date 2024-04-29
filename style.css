@@ -194,6 +194,11 @@ header #top-most .logo-text {
     font-size: 0.8rem;
 
 }
+#zzx {
+    border-bottom: 1px solid #534007;
+    width: 100%;
+    margin: 15px auto;
+}
 
 #top-controller {
     margin-top: 0.5rem;
@@ -1019,6 +1024,10 @@ nav .hover.hovered img:last-child {
         margin-bottom: 0;
     }
 
+    h2 {
+        font-size: 32px !important; 
+    }
+
     #tinh-nang #side-nav>button.active {
         border-color: #FFFF65;
         background-color: #FEAD00;
@@ -1055,6 +1064,9 @@ nav .hover.hovered img:last-child {
         border-color: #FEE995;
     }
 
+    h2 {
+
+    }
     #tinh-nang #main-content article h1, #tinh-nang #main-content article h3{
         background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
         -webkit-background-clip: text;
